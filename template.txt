@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #include <gtest/gtest.h>
 
-using namespace = std;
+using namespace std;
 
 namespace {
 class Solution {
@@ -12,5 +12,5 @@ public:
 
 TEST(p_, c1) {
     Solution s;
-    ASSERT_EQ(actual, expected);
+    ASSERT_EQ(, );
 }
