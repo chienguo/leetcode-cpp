@@ -1,5 +1,5 @@
 {
     "editor.formatOnSave": true,
     "editor.tabSize": 2,
-    "editor.inlayHints.enabled": "on"
+    "editor.inlayHints.enabled": "offUnlessPressed"
 }
