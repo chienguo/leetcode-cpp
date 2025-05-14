@@ -44,5 +44,6 @@ TEST(p0023, c1) {
   auto l3 = LINKLIST(2, 6);
   auto v = vector<ListNode *>{l1, l2, l3};
   auto expected = LINKLIST(1, 1, 2, 3, 4, 4, 5, 6);
-  ASSERT_EQ(s.mergeKLists(v), expected);
+  // ASSERT_EQ(s.mergeKLists(v), expected);
+  EXPECT_TRUE(areListsEqual(s.mergeKLists(v), expected));
 }
