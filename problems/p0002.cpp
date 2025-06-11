@@ -7,7 +7,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
     auto dummy = ListNode();
     auto cur = &dummy;
@@ -29,6 +29,6 @@ public:
     return dummy.next;
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0002, c1) {}

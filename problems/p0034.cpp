@@ -5,7 +5,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   vector<int> searchRange(vector<int> &nums, int target) {
     size_t start = lower(nums, target);
     if (start == nums.size() || nums[start] != target) {
@@ -28,6 +28,6 @@ public:
     return left;
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0034, c1) { Solution s; }

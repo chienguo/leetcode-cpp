@@ -5,12 +5,12 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   int strStr(string haystack, string needle) {
     return (int)haystack.find(needle);
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0028, c1) {
   Solution s;

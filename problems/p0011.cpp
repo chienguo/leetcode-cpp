@@ -5,7 +5,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   int maxArea(vector<int> &height) {
     size_t ans = 0;
     size_t left = 0, right = height.size() - 1;
@@ -21,7 +21,7 @@ public:
     return (int)ans;
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0011, c1) {
   Solution s;

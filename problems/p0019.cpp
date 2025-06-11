@@ -6,7 +6,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   ListNode *removeNthFromEnd(ListNode *head, int n) {
     auto dummy = ListNode(0, head);
     auto slow_p = &dummy;
@@ -26,7 +26,7 @@ public:
     return dummy.next;
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0019, c1) {
   Solution s;

@@ -5,7 +5,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   string convert(string s, int numRows) {
     if (numRows == 1 || numRows > s.length()) {
       return s;
@@ -23,7 +23,7 @@ public:
     return ans;
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0006, c1) {
   Solution s;

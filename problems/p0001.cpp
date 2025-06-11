@@ -5,7 +5,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   vector<int> twoSum(std::vector<int> &nums, int target) {
     unordered_map<int, int> map;
     for (int i = 0; i < nums.size(); ++i) {
@@ -18,7 +18,7 @@ public:
     return {};
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0001, case1) {
   Solution s;

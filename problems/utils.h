@@ -19,14 +19,14 @@ bool areListsEqual(ListNode *l1, ListNode *l2) {
 }
 
 // const int values[] = {__VA_ARGS__};
-#define LINKLIST(...)                                                          \
-  ([] {                                                                        \
-    const vector<int> values = {__VA_ARGS__};                                  \
-    ListNode *head = nullptr;                                                  \
-    ListNode **current = &head;                                                \
-    for (int v : values) {                                                     \
-      *current = new ListNode(v);                                              \
-      current = &((*current)->next);                                           \
-    }                                                                          \
-    return head;                                                               \
+#define LINKLIST(...)                         \
+  ([] {                                       \
+    const vector<int> values = {__VA_ARGS__}; \
+    ListNode *head = nullptr;                 \
+    ListNode **current = &head;               \
+    for (int v : values) {                    \
+      *current = new ListNode(v);             \
+      current = &((*current)->next);          \
+    }                                         \
+    return head;                              \
   })()

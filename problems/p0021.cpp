@@ -6,7 +6,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   ListNode *mergeTwoLists(ListNode *list1, ListNode *list2) {
     auto dummy = ListNode();
     auto ptr = &dummy;
@@ -29,7 +29,7 @@ public:
     return dummy.next;
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p_, c1) {
   Solution s;

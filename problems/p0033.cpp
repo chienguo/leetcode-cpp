@@ -5,7 +5,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   int search(vector<int> &nums, int target) {
     size_t i = findMin(nums);
     if (target > nums[nums.size() - 1]) {
@@ -15,7 +15,7 @@ public:
     }
   }
 
-private:
+ private:
   size_t findMin(vector<int> &nums) {
     size_t left = 0, right = nums.size() - 1;
     while (left < right) {
@@ -44,7 +44,7 @@ private:
     return -1;
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0033, c1) {
   Solution s;

@@ -7,7 +7,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   string longestCommonPrefix(vector<string> &strs) {
     sort(strs.begin(), strs.end());
     auto first = strs.front();
@@ -22,7 +22,7 @@ public:
     return first.substr(0, cl);
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0014, c1) {
   Solution s;

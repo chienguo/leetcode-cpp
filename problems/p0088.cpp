@@ -6,7 +6,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   void merge(vector<int> &nums1, int m, vector<int> &nums2, int n) {
     size_t i = nums1.size() - 1;
     m--;
@@ -19,7 +19,7 @@ public:
     }
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0088, case1) {
   Solution s;

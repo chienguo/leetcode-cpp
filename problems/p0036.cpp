@@ -5,7 +5,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   bool isValidSudoku(vector<vector<char>> &board) {
     array<array<int, 10>, 9> row;
     array<array<int, 10>, 9> col;
@@ -25,6 +25,6 @@ public:
     return true;
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0036, c1) { Solution s; }

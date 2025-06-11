@@ -5,11 +5,10 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   int removeDuplicates(vector<int> &nums) {
     auto n = nums.size();
-    if (n <= 1)
-      return (int)n;
+    if (n <= 1) return (int)n;
     size_t l = 1, r = 1;
     while (r < n) {
       if (nums[r] != nums[l - 1]) {
@@ -21,7 +20,7 @@ public:
     return (int)l;
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p_, c1) {
   Solution s;

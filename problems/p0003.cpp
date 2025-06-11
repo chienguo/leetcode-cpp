@@ -7,7 +7,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   int lengthOfLongestSubstring(string s) {
     auto res = 0;
     auto left = 0;
@@ -23,7 +23,7 @@ public:
     return res;
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0003, c1) {
   Solution s;

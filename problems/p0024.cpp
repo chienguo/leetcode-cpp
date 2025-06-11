@@ -6,7 +6,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   ListNode *swapPairs(ListNode *head) {
     auto dummy = ListNode();
     dummy.next = head;
@@ -26,7 +26,7 @@ public:
     return dummy.next;
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0024, c1) {
   Solution s;

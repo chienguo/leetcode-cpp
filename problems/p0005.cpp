@@ -7,7 +7,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   string longestPalindrome(string s) {
     size_t start_idx = 0, max = 1;
     for (size_t i = 0; i < s.length(); i++) {
@@ -45,7 +45,7 @@ public:
     return make_tuple(lt + 1, rt - lt - 1);
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0005, c1) {
   Solution s;

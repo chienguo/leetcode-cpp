@@ -8,7 +8,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   ListNode *mergeKLists(vector<ListNode *> &lists) {
     auto dummy = ListNode();
     auto ptr = &dummy;
@@ -24,8 +24,7 @@ public:
     }
 
     while (!queue.empty()) {
-      if (queue.top()->next != nullptr)
-        queue.push(queue.top()->next);
+      if (queue.top()->next != nullptr) queue.push(queue.top()->next);
       ptr->next = queue.top();
       ptr = ptr->next;
       queue.pop();
@@ -34,7 +33,7 @@ public:
     return dummy.next;
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0023, c1) {
   // [[1,4,5],[1,3,4],[2,6]]

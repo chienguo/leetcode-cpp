@@ -6,7 +6,7 @@ using namespace std;
 
 namespace {
 class Solution {
-public:
+ public:
   int romanToInt(string s) {
     auto map =
         unordered_map<char, int>{{'I', 1},   {'V', 5},   {'X', 10},  {'L', 50},
@@ -24,7 +24,7 @@ public:
     return ans + map[s.back()];
   }
 };
-} // namespace
+}  // namespace
 
 TEST(p0013, c1) {
   Solution s;
